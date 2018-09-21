@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<students>
+    <student number="stu1">
+        <name >张三</name>
+        <age></age>
+        <url></url>
+    </student>
+    <student number="stu2">
+        <name >李四</name>
+        <age></age>
+        <url></url>
+    </student>
+</students>

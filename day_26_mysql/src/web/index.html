@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.bootcss.com/animate.css/3.5.2/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.90so.net/layui/2.3.0/css/layui.css">
+    <link rel="shortcut icon" href="https://www.zhihu.com/favicon.ico">
+    <title>welcome to xmcc</title>
+    <style>
+        body{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #login{
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items:right;
+            margin-top: 20px;
+        }
+        button{
+            align-self: center;
+        }
+        img{
+            display: block;
+            width:600px;
+            height: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    <!--<h1 class="animated infinite zoomOutLeft">java web page</h1>-->
+    <p id="welcome"></p>
+    <div class="layui-carousel" id="test1">
+        <div carousel-item>
+            <div><img src="slide1.jpg" alt="This is a image"></div>
+            <div><img src="slide2.jpg" alt="This is a image"></div>
+            <div><img src="slide3.jpg" alt="This is a image"></div>
+        </div>
+    </div>
+    <br>
+    <p>welcome to here</p>
+    <form id="login" method="get" action="" >
+        <label for="username">
+            UserName: <input type="text" id="username">
+        </label>
+        <br>
+        <label for="pass">
+            PassWord: <input type="password" id="pass">
+        </label>
+        <br>
+        <button id="btn" type="submit">登录</button>
+    </form>
+    <p id="time"></p>
+    <script src="//cdn.90so.net/layui/2.3.0/layui.all.js"></script>
+    <script>
+        layui.use('carousel',function(){
+            var carousel =layui.carousel;
+            carousel.render({
+                elem:'#test1',
+                width:'500px',
+                height:'300px'
+            });
+        });
+        welcome.innerHTML="欢迎来到这里，你的ip是"+document.location.hostname;
+    </script>
+</body>
+</html>
